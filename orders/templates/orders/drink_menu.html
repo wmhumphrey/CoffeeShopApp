@@ -1,0 +1,38 @@
+<!-- orders/templates/orders/drink_menu.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+    <h1>Drinks</h1>
+    <ul>
+        {% for drinktype in drinktypes %}
+            <li>
+                <strong>{{ drinktype.name }}</strong>: {{ drinktype.description }}
+            </li>
+        {% empty %}
+            <li>No drink types available.</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Flavors</h1>
+    <ul>
+        {% for flavor in flavors %}
+            <li>{{ flavor.name }}</li>
+        {% empty %}
+            <li>No flavors available.</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Milks</h1>
+    <ul>
+        {% for milk in milks %}
+            <li>{{ milk.name }}</li>
+        {% empty %}
+            <li>No milk options available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

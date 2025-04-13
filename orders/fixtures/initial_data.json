@@ -1,0 +1,157 @@
+[
+  {
+    "model": "orders.Flavor",
+    "pk": 1,
+    "fields": {
+      "name": "Vanilla"
+    }
+  },
+  {
+    "model": "orders.Flavor",
+    "pk": 2,
+    "fields": {
+      "name": "Caramel"
+    }
+  },
+  {
+    "model": "orders.Flavor",
+    "pk": 3,
+    "fields": {
+      "name": "Hazelnut"
+    }
+  },
+  {
+    "model": "orders.Flavor",
+    "pk": 4,
+    "fields": {
+      "name": "Mocha"
+    }
+  },
+  {
+    "model": "orders.Flavor",
+    "pk": 5,
+    "fields": {
+      "name": "Lavender"
+    }
+  },
+  {
+    "model": "orders.Flavor",
+    "pk": 6,
+    "fields": {
+      "name": "Almond"
+    }
+  },
+  {
+    "model": "orders.Flavor",
+    "pk": 7,
+    "fields": {
+      "name": "Coconut"
+    }
+  },
+  {
+    "model": "orders.Milk",
+    "pk": 1,
+    "fields": {
+      "name": "Whole"
+    }
+  },
+  {
+    "model": "orders.Milk",
+    "pk": 2,
+    "fields": {
+      "name": "Skim"
+    }
+  },
+  {
+    "model": "orders.Milk",
+    "pk": 3,
+    "fields": {
+      "name": "Soy"
+    }
+  },
+  {
+    "model": "orders.Milk",
+    "pk": 4,
+    "fields": {
+      "name": "Oat"
+    }
+  },
+  {
+    "model": "orders.Milk",
+    "pk": 4,
+    "fields": {
+      "name": "Coconut"
+    }
+  },
+  {
+    "model": "orders.Milk",
+    "pk": 5,
+    "fields": {
+      "name": "Breve"
+    }
+  },
+  {
+    "model": "orders.DrinkType",
+    "pk": 1,
+    "fields": {
+      "name": "Latte",
+      "description": "A creamy milk-based espresso drink."
+    }
+  },
+  {
+    "model": "orders.DrinkType",
+    "pk": 2,
+    "fields": {
+      "name": "Espresso",
+      "description": "A strong and bold shot of coffee."
+    }
+  },
+  {
+    "model": "orders.DrinkType",
+    "pk": 3,
+    "fields": {
+      "name": "Cappuccino",
+      "description": "A foamy milk-based espresso drink."
+    }
+  },
+  {
+    "model": "orders.DrinkType",
+    "pk": 4,
+    "fields": {
+      "name": "Cortado",
+      "description": "A balanced espresso drink made with equal parts milk and espresso."
+    }
+  },
+  {
+    "model": "orders.DrinkType",
+    "pk": 5,
+    "fields": {
+      "name": "Macchiato",
+      "description": "An espresso shot marked with foam."
+    }
+  },
+  {
+    "model": "orders.PastryType",
+    "pk": 1,
+    "fields": {
+      "name": "Coffee Cake",
+      "description": "A dense vanilla cake with a cinnamon sugar crumble."
+    }
+  },
+  {
+    "model": "orders.PastryType",
+    "pk": 2,
+    "fields": {
+      "name": "Blueberry Muffin",
+      "description": "A golden brown delight with blueberry inclusions."
+    }
+  },
+  {
+    "model": "orders.PastryType",
+    "pk": 3,
+    "fields": {
+      "name": "Cinnamon Roll",
+      "description": "A cinnamon sugar swilled flaky rolled up pasty and smothered in cream cheese icing."
+    }
+  }
+]
