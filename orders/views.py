@@ -2,7 +2,7 @@ from django.contrib.contenttypes.models import ContentType
 
 from .models import Customer, Order, OrderItem, DrinkType, Milk, Flavor, Drink
 from .forms import OrderForm
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 
 
 # Create your views here.
@@ -20,7 +20,7 @@ def drink_menu(request):
     }
     return render(request, 'orders/drink_menu.html', context)
 
-def order(request):
+def order_item(request):
     if request.method == 'POST':
         form = OrderForm(request.POST)
         if form.is_valid():
@@ -51,6 +51,12 @@ def order(request):
         form = OrderForm()
     return render(request, 'orders/order_drink.html', {'form': form})
 
+def order_confirmation(request, order_id):
+    """
+    Display a confirmation page with details of the completed order.
+    """
+    order = get_object_or_404(Order, pk=order_id)
+    return render(request, 'orders/order_confirmation.html', {'order': order})
 
 def home(request):
     return render(request, 'orders/home.html')

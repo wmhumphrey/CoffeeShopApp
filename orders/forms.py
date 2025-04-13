@@ -6,6 +6,10 @@ class OrderForm(forms.Form):
         queryset=DrinkType.objects.all(),
         label='Drink Type',
     )
+    size = forms.ChoiceField(
+        choices=SIZE_CHOICES,
+        label='Size',
+    )
     flavor = forms.ModelChoiceField(
         queryset=Flavor.objects.all(),
         label='Flavor',
@@ -13,10 +17,6 @@ class OrderForm(forms.Form):
     milk = forms.ModelChoiceField(
         queryset=Milk.objects.all(),
         label='Milk',
-    )
-    size = forms.ChoiceField(
-        choices=SIZE_CHOICES,
-        label='Size',
     )
     extra_shots = forms.IntegerField(
         min_value=0,
