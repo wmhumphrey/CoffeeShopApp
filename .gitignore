@@ -1,21 +1,29 @@
-# Python byte code
-*.pyc
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
 
-# Virtual environment directories
+# Virtual environment
 .venv/
 venv/
 
 # Django stuff:
+*.sqlite3
 db.sqlite3
-*.log
 
-# Environment variables and secret keys
+# Environment variables
 .env
 
-# PyCharm
-.idea/
+# Logs and local settings
+*.log
 
-# OS generated files:
+# IDE and editor folders
+.idea/
+.vscode/
+
+# OS generated files
 .DS_Store
 Thumbs.db
+
+# Media files (if not meant to be tracked)
+media/
